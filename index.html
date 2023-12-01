@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Document</title>
+    <link rel=stylesheet href=./public/css/app.css>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex position-fixed z-2 w-100">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./public/img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <div class="nav-1 d-flex justify-content-lg-center gap-4 w-100">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="h-uderline nav-link dropdown-toggle text-primary" href="#"
+                                id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Home
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active h-uderline" aria-current="page" href="#">Doctors</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h-uderline" href="#">Services</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="h-uderline nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Pages
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="h-uderline nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Blogs
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link h-uderline" href="#">Contact-us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav-btn w-25">
+                    <form class="container-fluid justify-content-start">
+                        <button
+                            class="h-btn nav-btn btn btn-outline-primary bg-primary text-light me-2 w-100 py-lg-2 border border-0"
+                            type="button">Book
+                            Appointment</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- section1:carousel -->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="img1">
+                    <div class="d-flex flex-column justify-content-lg-center align-items-lg-center p-lg-0 w-75 h-100">
+                        <p class="fs-1 paragraph1">
+                            We Provide <span class="text-primary"><b>Medical</b></span> Services That You Can <span
+                                class="text-primary"><b>Trust!</b></span>
+                        </p>
+                        <p class="fs-6 paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                            possimus
+                            corporis
+                            accusantium tempore qui,
+                            iusto fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloribus!
+                        </p>
+                        <div class="caro-btn  d-flex w-50 flex-lg-row flex-column gap-1 ">
+                            <button type="button" class="h-btn btn btn-primary btn-lg p-2 border border-0">Get
+                                Appointment</button>
+                            <button type="button" class="h-btn btn btn-dark btn-lg p-2 border border-0 ">About
+                                us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="img2">
+                    <div class="d-flex flex-column justify-content-lg-center align-items-lg-center p-lg-0 w-75 h-100">
+                        <p class="fs-1 paragraph1">
+                            We Provide <span class="text-primary"><b>Medical</b></span> Services That You Can <span
+                                class="text-primary"><b>Trust!</b></span>
+                        </p>
+                        <p class="fs-6 paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                            possimus
+                            corporis
+                            accusantium tempore qui,
+                            iusto fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloribus!
+                        </p>
+                        <div class="caro-btn d-flex w-50 flex-lg-row flex-column gap-1">
+                            <button type="button" class="h-btn btn btn-primary btn-lg p-2">Get Appointment</button>
+                            <button type="button" class="h-btn btn btn-dark btn-lg p-2">About us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="img3">
+                    <div class="d-flex flex-column justify-content-lg-center align-items-lg-center p-lg-0 w-75 h-100">
+                        <p class="fs-1 paragraph1">
+                            We Provide <span class="text-primary"><b>Medical</b></span> Services That You Can <span
+                                class="text-primary"><b>Trust!</b></span>
+                        </p>
+                        <p class="fs-6 paragraph1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                            possimus
+                            corporis
+                            accusantium tempore qui,
+                            iusto fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, doloribus!
+                        </p>
+                        <div class="caro-btn d-flex w-50 flex-lg-row flex-column gap-1 ">
+                            <button type="button" class="h-btn btn btn-primary btn-lg p-2">Get Appointment</button>
+                            <button type="button" class="h-btn btn btn-dark btn-lg p-2">About us</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-primary border border-0 rounded-5" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-primary border border-0 rounded-5" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- section 2 -->
+    <div class="sec2">
+        <h2>We Are Always Ready To Help You And Your Family</h2>
+        <img src="./public/img/section-img.png" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, deleniti. Lorem, ipsum dolor sit amet
+            consectetur</p>
+    </div>
+    <div class="icons">
+        <div class="icons-parts">
+            <div class="icon-border h-btn">
+                <i class="fa-solid fa-truck-medical" style="color: #5895fe;"></i>
+            </div>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates expedita Lorem,</p>
+        </div>
+        <div class="icons-parts">
+            <div class="icon-border h-btn">
+                <i class="fa-solid fa-staff-snake" style="color: #5692fb;"></i>
+            </div>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates expedita Lorem,</p>
+        </div>
+        <div class="icons-parts">
+            <div class="icon-border h-btn">
+                <i class="fa-solid fa-stethoscope" style="color: #5692fb;"></i>
+            </div>
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates expedita Lorem,</p>
+        </div>
+    </div>
+    <!-- section 3 -->
+    <div class="bg-img2">
+        <div class="bg-blue bg-primary opacity-75">
+            <div class="bg-icons d-flex flex-lg-row flex-column justify-content-lg-around align-items-center">
+                <div class="d-flex flex-lg-row flex-column align-items-center gap-lg-2">
+                    <div class="icon2-border">
+                        <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="d-flex flex-column  align-items-center text-light">
+                        <p class="fs-3 fw">3468</p>
+                        <p>Hospital Rooms</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-lg-row flex-column align-items-center gap-lg-2">
+                    <div class="icon2-border">
+                        <i class="fa-solid fa-user" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="d-flex flex-column  align-items-center text-light">
+                        <p class="fs-3 fw">557</p>
+                        <p>Specialist Doctors</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-lg-row flex-column align-items-center gap-lg-2">
+                    <div class="icon2-border">
+                        <i class="fa-regular fa-face-smile" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="d-flex flex-column  align-items-center text-light">
+                        <p class="fs-3 fw">4379</p>
+                        <p>Happy Patients</p>
+                    </div>
+                </div>
+                <div class="d-flex flex-lg-row flex-column align-items-center gap-lg-2">
+                    <div class="icon2-border">
+                        <i class="fa-solid fa-table" style="color: #ffffff;"></i>
+                    </div>
+                    <div class="d-flex flex-column  align-items-center text-light">
+                        <p class="fs-3 fw">32</p>
+                        <p>Years of Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- section 4 -->
+    <div class="d-flex justify-content-center text-center pt-5 flex-column align-items-center gap-2">
+        <h2 class="sec4-title">We Offer Different Services To Improve Your Health</h2>
+        <img src="./public/img/section-img.png" alt="">
+        <p class="sec4-para">Lorem ipsum dolor sit amet consectetur Lorem . adipisicing elit. Sint distinctio Lorem.?
+        </p>
+    </div>
+
+    <div class="d-lg-flex p-lg-5 p-3">
+        <div>
+            <div class="ps-lg-4">
+                <h3>Who we are</h3>
+                <p class="p-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptate labore perferendis
+                    perspiciatis
+                    adipisci provident quam laboriosam? Reiciendis placeat tempore Lorem ipsum dolor sit amet
+                    consectetur voluptate.</p>
+                <br>
+                <p class="p-2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus fugiat animi iure.
+                </p>
+                <div class="d-lg-flex gap-5 pt-lg-2 p-2">
+                    <ul class="d-flex flex-column gap-3 list-unstyled">
+                        <a href="" class="text-decoration-none text-secondary">
+                            <li><i class="fa-solid fa-play text-primary p-2"></i>
+                                Lorem, ipsum dolor.</li>
+                        </a>
+                        <a href="" class="text-decoration-none text-secondary">
+                            <li><i class="fa-solid fa-play text-primary p-2"></i>
+                                Lorem, ipsum.</li>
+                        </a>
+                        <a href="" class="text-decoration-none text-secondary">
+                            <li><i class="fa-solid fa-play text-primary p-2"></i>
+                                Lorem, ipsum dolp</li>
+                        </a>
+                    </ul>
+                    <ul class="d-flex flex-column gap-3 list-unstyled">
+                        <a href="" class="text-decoration-none text-secondary">
+                            <li><i class="fa-solid fa-play text-primary p-2"></i>
+                                Lorem, ipsum dolor.</li>
+                        </a>
+                        <a href="" class="text-decoration-none text-secondary">
+                            <li><i class="fa-solid fa-play text-primary p-2"></i>
+                                Lorem, ipsum.</li>
+                        </a>
+                        <a href="" class="text-decoration-none text-secondary">
+                            <li><i class="fa-solid fa-play text-primary p-2"></i>
+                                Lorem, ipsum dolp</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="">
+            <video src="./public/vid/One of the Biggest Hospitals in the World： Did You Know？ [mzOveJDK7iE].mp4"
+                controls width="100%" poster="./public/img/video-bg.jpg"></video>
+        </div>
+    </div>
+
+    <!-- section 5 -->
+
+    <section>
+        <div class="sec5-bg-img">
+            <div class="bg-blue bg-primary opacity-75">
+                <div class="d-flex align-items-center text-center text-light flex-column">
+                    <h2 class="">Do You Need Emergency Medical Care? Call @ 1234 56789</h2>
+                    <p class="">Lorem ipsum dolor, sit amet Lorem, ipsum dolor. consectetur adipisicing elit. Esse qui
+                        dolor quae!</p>
+                    <div class="d-flex gap-4">
+                        <button type="button"
+                            class="h-btn btn btn-primary bg-white text-primary border-light btn-lg">Contact
+                            Now</button>
+                        <button type="button" class="h-btn btn btn-  text-light border-light btn-lg">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- section 6 -->
+    <section class="pt-5 pb-5">
+        <div class="d-flex flex-column align-items-center text-center pt-5">
+            <h2 class="sec6-title">We Maintain Cleaniness Rules Inside Our Hospital</h2>
+            <img src="./public/img/section-img.png" alt="">
+            <p class="sec6-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, nemo inventore?</p>
+        </div>
+        <div class="d-flex flex-lg-row flex-column justify-content-evenly gap-2 p-5 pe-4">
+            <div class="image1">
+                <img src="./public/img/pf1.jpg" alt="image">
+                <div>
+                    <button class="border-0 rounded bg-white">
+                        <a class="text-decoration-none text-blue fw-bold" href="#">View
+                            Details</details></a>
+                    </button>
+                </div>
+            </div>
+            <div class="image1">
+                <img src="./public/img/pf2.jpg" alt="">
+                <div>
+                    <button class="border-0 rounded bg-white">
+                        <a class="text-decoration-none text-blue fw-bold" href="#">View
+                            Details</details></a>
+                    </button>
+                </div>
+            </div>
+            <div class="image1">
+                <img src="./public/img/pf3.jpg" alt="">
+                <div>
+                    <button class="border-0 rounded bg-white">
+                        <a class="text-decoration-none text-blue fw-bold" href="#">View
+                            Details</details></a>
+                    </button>
+                </div>
+            </div>
+            <div class="image1">
+                <img src="./public/img/pf4.jpg" alt="">
+                <div>
+                    <button class="border-0 rounded bg-white">
+                        <a class="text-decoration-none text-blue fw-bold" href="#">View
+                            Details</details></a>
+                    </button>
+                </div>
+            </div>
+            <img src="" alt="">
+        </div>
+    </section>
+
+
+    <!-- section 7 -->
+
+    <section>
+        <div class="pt-5 d-flex justify-content-center text-center flex-column align-items-center">
+            <h2 class="sec4-title">We Offer Different Services To Improve Your Health</h2>
+            <img src="./public/img/section-img.png" alt="">
+            <p class="sec6-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, nemo inventore?</p>
+        </div>
+        <div class="">
+            <div class="d-flex flex-lg-row flex-column justify-content-around p-lg-5 ps-lg-0 ps-4">
+                <div class="sec7-row w-25 d-flex flex-column align-items-centre">
+                    <h3 class="d-flex d-lg-inline align-items-center gap-2">
+                        <i class="fa-regular fa-clipboard pe-lg-0 pe-3" style="color: #5291ff;"></i>
+                        General Treatment
+                    </h3>
+                    <p class="w-75 ps-lg-4 ps-3 ms-lg-0 ms-5 text-body-tertiary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, officiis optio. Vitae ut ipsa
+                        modi!
+                    </p>
+                </div>
+                <div class="sec7-row w-25 d-flex flex-column align-items-centre">
+                    <h3 class="d-flex d-lg-inline align-items-center gap-2">
+                        <i class="fa-solid fa-tooth pe-lg-0 pe-3" style="color: #5891f3;"></i>
+                        General Treatment
+                    </h3>
+                    <p class="w-75 ps-lg-4 ps-4 ms-lg-0 ms-5 text-body-tertiary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, officiis optio. Vitae ut ipsa
+                        modi!
+                    </p>
+                </div>
+                <div class="sec7-row w-25 d-flex flex-column align-items-centre">
+                    <h3 class="d-flex d-lg-inline align-items-center gap-2">
+                        <i class="fa-solid fa-heart pe-lg-0 pe-3" style="color: #6ba1ff;"></i>
+                        General Treatment
+                    </h3>
+                    <p class="w-75 ps-lg-4 ps-4 ms-lg-0 ms-5 text-body-tertiary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, officiis optio. Vitae ut ipsa
+                        modi!
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex flex-lg-row flex-column justify-content-around p-lg-5 ps-lg-0 ps-4">
+                <div class="sec7-row w-25 d-flex flex-column align-items-centre">
+                    <h3 class="d-flex d-lg-inline align-items-center gap-2">
+                        <i class="fa-solid fa-ear-listen pe-lg-0 pe-3" style="color: #4d8eff;"></i>
+                        General Treatment
+                    </h3>
+                    <p class="w-75 ps-lg-4 ps-4 ms-lg-0 ms-5 text-body-tertiary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, officiis optio. Vitae ut ipsa
+                        modi!
+                    </p>
+                </div>
+                <div class="sec7-row w-25 d-flex flex-column align-items-centre">
+                    <h3 class="d-flex d-lg-inline align-items-center gap-2">
+                        <i class="fa-solid fa-eye pe-lg-0 pe-3" style="color: #508ffb;"></i>
+                        General Treatment
+                    </h3>
+                    <p class="w-75 ps-lg-4 ps-4 ms-lg-0 ms-5 text-body-tertiary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, officiis optio. Vitae ut ipsa
+                        modi!
+                    </p>
+                </div>
+                <div class="sec7-row w-25 d-flex flex-column align-items-centre">
+                    <h3 class="d-flex d-lg-inline align-items-center gap-2">
+                        <i class="fa-solid fa-hand-holding-droplet pe-lg-0 pe-3" style="color: #488bfe;"></i>
+                        General Treatment
+                    </h3>
+                    <p class="w-75 ps-lg-4 ps-4 ms-lg-0 ms-5 text-body-tertiary">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, officiis optio. Vitae ut ipsa
+                        modi!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 8 -->
+    <section class="bg-body-tertiary">
+        <div class="pt-5 d-flex justify-content-center text-center flex-column align-items-center">
+            <h2 class="sec4-title">We Offer Different Services To Improve Your Health</h2>
+            <img src="./public/img/section-img.png" alt="">
+            <p class="sec6-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, nemo inventore?</p>
+        </div>
+        <div class="sec8-all-cards d-flex flex-lg-row flex-column gap-5 justify-content-center ps-4 pb-5">
+            <div class="card sec8-cards ">
+                <div class="card-body d-flex flex-column align-items-center gap-4 p-">
+                    <div class="d-flex flex-column align-items-center gap-5">
+                        <i class="i1 fa-solid fa-scissors fa-rotate-270 fs-1" style="color: #397ef3;"></i>
+                        <div class="d-flex flex-column align-items-center">
+                            <h5 class="card-title">Card title</h5>
+                            <p><span class="text-primary fs-2"><b>999$</b></span><span class="opacity-50">/ per
+                                    visit</span></p>
+                        </div>
+                    </div>
+                    <ul class="d-flex flex-column gap-4">
+                        <div class="d-flex aligne-items-end justify-content-end gap-4">
+                            <li>Lorem, ipsum dolor.</li>
+                            <i class="fa-solid fa-circle-check" style="color: #3378f0;"></i>
+                        </div>
+                        <div class="d-flex aligne-items-end justify-content-end gap-4">
+                            <li>Lorem, ipsum dolor.</li>
+                            <i class="fa-solid fa-circle-check" style="color: #3378f0;"></i>
+                        </div>
+                        <div class="d-flex aligne-items-end justify-content-end gap-4">
+                            <li>Lorem, ipsum dolor.</li>
+                            <i class="fa-solid fa-circle-xmark" style="color: #8a8a8a;"></i>
+                        </div>
+                        <div class="d-flex aligne-items-end justify-content-end gap-4">
+                            <li>Lorem, ipsum dolor.</li>
+                            <i class="fa-solid fa-circle-xmark" style="color: #8a8a8a;"></i>
+                        </div>
+                        <div class="d-flex aligne-items-end justify-content-end gap-4">
+                            <li>Lorem, ipsum dolor.</li>
+                            <i class="fa-solid fa-circle-xmark" style="color: #8a8a8a;"></i>
+                        </div>
+                    </ul>
+                    <a href="#" class="h-btn btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card sec8-cards">
+                <div class="card-body d-flex flex-column align-items-center gap-4">
+                    <div class="d-flex flex-column align-items-center gap-5">
+                        <i class="i1  fa-solid fa-tooth fs-1" style="color: #4386f9;"></i>
+                        <div class="d-flex flex-column align-items-center">
+                            <h5 class="card-title">Card title</h5>
+                            <p><span class="text-primary fs-2"><b>999$</b></span><span class="opacity-50">/ per
+                                    visit</span></p>
+                        </div>
+                    </div>
+                    <ul class="d-flex flex-column gap-4 ">
+                        <div class="d-flex aligne-items-end justify-content-end gap-4">
+                            <li>Lorem, ipsum dolor.</li>
+                            <i class="fa-solid fa-circle-check" style="color: #3378f0;"></i>
+                        </div>
+                        <div class="d-flex aligne-items-end justify-content-end gap-4">
+                            <li>Lorem, ipsum dolor.</li>
+                            <i class="fa-solid fa-circle-check" style="color: #3378f0;"></i>
+                        </div>
+                        <div class="d-flex aligne-items-end justify-content-end gap-4">
+                            <li>Lorem, ipsum dolor.</li>
+                            <i class="fa-solid fa-circle-check" style="color: #3378f0;"></i>
+                        </div>
+                        <div class="d-flex aligne-items-end justify-content-end gap-4">
+                            <li>Lorem, ipsum dolor.</li>
+                            <i class="fa-solid fa-circle-xmark" style="color: #8a8a8a;"></i>
+                        </div>
+                        <div class="d-flex aligne-items-end justify-content-end gap-4">
+                            <li>Lorem, ipsum dolor.</li>
+                            <i class="fa-solid fa-circle-xmark" style="color: #8a8a8a;"></i>
+                        </div>
+                    </ul>
+                    <a href="#" class="h-btn btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+            <div class="card sec8-cards">
+                <div class="card-body d-flex flex-column align-items-center gap-4 p-">
+                    <div class="d-flex flex-column align-items-center gap-5">
+                        <i class="i1 fa-solid fa-heart-pulse fs-1" style="color: #478bff;"></i>
+                        <div class="d-flex flex-column align-items-center">
+                            <h5 class="card-title">Card title</h5>
+                            <p><span class="text-primary fs-2"><b>999$</b></span><span class="opacity-50">/ per
+                                    visit</span></p>
+                        </div>
+                    </div>
+                    <ul class="d-flex flex-column gap-4">
+                        <div class="d-flex align-items-center justify-content-center gap-4">
+                            <li>Lorem, ipsum dolor.</li>
+                            <i class="fa-solid fa-circle-check" style="color: #3378f0;"></i>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-4">
+                            <li>Lorem, ipsum dolor.</li>
+                            <i class="fa-solid fa-circle-check" style="color: #3378f0;"></i>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-4">
+                            <li>Lorem, ipsum dolor.</li>
+                            <i class="fa-solid fa-circle-check" style="color: #3378f0;"></i>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-4">
+                            <li>Lorem, ipsum dolor.</li>
+                            <i class="fa-solid fa-circle-check" style="color: #3378f0;"></i>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-center gap-4">
+                            <li>Lorem, ipsum dolor.</li>
+                            <i class="fa-solid fa-circle-check" style="color: #3378f0;"></i>
+                        </div>
+                    </ul>
+                    <a href="#" class="h-btn btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 9 -->
+    <section>
+        <div class="pt-5 d-flex justify-content-center text-center flex-column align-items-center">
+            <h2 class="sec4-title">Keep Up With Our Most Recent Medical News.</h2>
+            <img src="./public/img/section-img.png" alt="">
+            <p class="sec6-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, nemo inventore?</p>
+        </div>
+        <div
+            class="sec9-cards row row-cols-1 row-cols-md-3 d-flex flex-lg-row flex-column justify-content-center align-items-center gap-5">
+            <div class="col">
+                <div class="card">
+                    <img src="./public/img/blog1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-ticket bg-primary p-1 text-white rounded-1 ">22 Aug, 2020</p>
+                        <h5 class="card-title">We Have Annouced Our New Product.</h5>
+                        <p class="card-text text-secondary">This is a longer card with supporting text below as a
+                            natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./public/img/blog2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-ticket bg-primary p-1 text-white rounded-1 ">22 Aug, 2020</p>
+                        <h5 class="card-title">Top five way For Solving Teeth Problems.</h5>
+                        <p class="card-text text-secondary">This is a longer card with supporting text below as a
+                            natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./public/img/blog3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-ticket bg-primary p-1 text-white rounded-1 ">22 Aug, 2020</p>
+                        <h5 class="card-title">We provide Highly Business Solutions.</h5>
+                        <p class="card-text text-secondary">This is a longer card with supporting text below as a
+                            natural lead-in to additional content. This content is a little bit longer.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 10 -->
+    <section>
+        <div class="bg-img3">
+            <div class="bg-blue bg-primary opacity-75">
+                <div class="bg-icons d-flex flex-lg-row flex-column justify-content-lg-around align-items-center gap-5">
+                    <img class="sec10-imgs" src="./public/img/client1.png" alt="">
+                    <img class="sec10-imgs" src="./public/img/client2.png" alt="">
+                    <img class="sec10-imgs" src="./public/img/client3.png" alt="">
+                    <img class="sec10-imgs" src="./public/img/client4.png" alt="">
+                    <img class="sec10-imgs" src="./public/img/client5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section 11 -->
+    <section>
+        <div class="pt-5 d-flex justify-content-center text-center flex-column align-items-center">
+            <h2 class="sec4-title">We Are Always Ready To Help You. Book An Appointment</h2>
+            <img src="./public/img/section-img.png" alt="">
+            <p class="sec4-para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro, nemo inventore?</p>
+        </div>
+        <div class="d-flex align-lg-center flex-lg-row flex-column justify-content-center">
+            <div class="sec11-form w-50 d-flex justify-content-center align-items-center">
+                <div class="d-flex flex-column pt-5 align-items-start">
+                    <div class="d-flex flex-lg-row flex-column w-100 gap-3">
+                        <div class="sec11-inputs d-lg-inline d-flex flex-column align-items-center ps-lg-0 ps-2 w-50">
+                            <div class="input-group mb-3 w-">
+                                <input type="text" class="form-control" placeholder="Name" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3 w-">
+                                <input type="number" class="form-control" placeholder="Phone" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3 w-">
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Doctor</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="sec11-inputs d-lg-inline d-flex flex-column align-items-center ps-lg-0 ps-2 w-50">
+                            <div class="input-group mb-3 w-">
+                                <input type="text" class="form-control" placeholder="Name" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                            <div class="input-group mb-3 w-">
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Doctor</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group mb-3 w-">
+                                <input type="number" class="form-control" placeholder="Phone" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sec11-textform d-flex justify-content-center ps-lg-0 ps-2 flex-column gap-3">
+                        <div class="input-group">
+                            <textarea class="form-control" aria-label="With textarea"
+                                placeholder="Write Your Message Here..."></textarea>
+                        </div>
+                        <div class="d-flex flex-lg-row flex-column gap-lg-5 ">
+                            <button class="h-btn bg-primary text-bg-primary text-light rounded-1 border-0">Book An
+                                Appointment</button>
+                            <p class="text-secondary pt-2">( We will contact you by a text message )</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sec11-img">
+                <img src="./public/img/contact-img.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!-- section 12 -->
+    <section>
+        <div
+            class="bg-blue sec12-bg bg-info-subtle d-flex justify-content-center flex-lg-row flex-column align-items-center h-100 ">
+            <div
+                class="sec12-inputs d-lg-inline d-flex align-items-center justify-content-center text-lg-start text-center flex-column w-50">
+                <h2>
+                    Sign-up for newsletter
+                </h2>
+                <p class="w-75">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. At in, modi ipsum quod repellat
+                </p>
+            </div>
+            <div class="sec12-inputs w-50">
+                <div class="email-input mb-3 w-50 d-flex flex-lg-row flex-column gap-3">
+                    <input type="email" placeholder="Your email address" class="form-control" id="exampleInputEmail1"
+                        aria-describedby="emailHelp">
+                    <button
+                        class="h-btn btn-sec12 bg-primary text-bg-primary text-light rounded-1 border-0 w-25">Sbuscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+
+    <footer class="bg-primary">
+        <div class="d-flex flex-lg-row flex-column align-items-start p-4 pt-5 gap-lg-0 gap-5 h-100">
+            <div class="footer-para w-25 d-flex flex-column align-items-start justify-content-center h-100">
+                <h5 class="text-white"><span>About</span> Us</h5>
+                <br>
+                <p class="text-white w-75">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, quos enim sit
+                    pariatur ut facilis culpa.</p>
+                <div class="media-icons d-flex justify-content-between pt-4 align-items-center w-75">
+                    <a href=""><i
+                            class="h-btn fa-brands fa-google-plus-g text-white fs-4 border border-1 border-1 p-2 border-light rounded-5"></i></a>
+                    <a href=""><i
+                            class="h-btn fa-brands fa-twitter text-white fs-4 border border-1 border-1 p-2 border-light rounded-5"></i></a>
+                    <a href=""><i
+                            class="h-btn fa-brands fa-snapchat text-white fs-4 border border-1 border-1 p-2 border-light rounded-5"></i></a>
+                    <a href=""><i
+                            class="h-btn fa-brands fa-facebook text-white fs-4 border border-1 border-1 p-2 border-light rounded-5"></i></a>
+                    <a href=""><i
+                            class="h-btn fa-brands fa-skype text-white fs-4 border border-1 border-1 p-2 border-light rounded-5"></i></a>
+                </div>
+            </div>
+            <div class="footer-para w-25 d-flex flex-column align-items-start justify-content-center h-100">
+                <h5 class="text-white "><span>Quick</span> Links</h5>
+                <br>
+                <div class="d-flex justify-content-between flex-lg-row flex-column w-75">
+                    <ul
+                        class="d-flex flex-column gap-2 justify-content-center align-items-center text-light pe-lg-5 w-25">
+                        <li>Lorem.</li>
+                        <li>Lorem.</li>
+                        <li>Lorem.</li>
+                        <li>Lorem.</li>
+                        <li>Lorem.</li>
+                    </ul>
+                    <ul class="d-flex flex-column gap-2 justify-content-center align-items-center text-light w-25">
+                        <li>Lorem.</li>
+                        <li>Lorem.</li>
+                        <li>Lorem.</li>
+                        <li>Lorem.</li>
+                        <li>Lorem.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-para w-25 d-flex flex-column align-items-start justify-content-center h-100">
+                <h5 class="text-white "><span>Open</span> Hours</h5>
+                <br>
+                <p class="text-white w-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officia
+                    repellendus Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde esse hic recusandae
+                    sint.
+                </p>
+                <div class="footer-timing d-flex gap-lg-5 justify-content-between text-white">
+                    <div class="d-lg-flex flex-lg-column">
+                        <p>Monday-friday</p>
+                        <p>Saturday</p>
+                        <p>Monday-Thusday</p>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <p>8.00-20.00</p>
+                        <p>9.00-18.30</p>
+                        <p>9.00-15.00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-para w-25 d-flex flex-column align-items-start justify-content-center h-100">
+                <div class="footer-child1  d-lg-flex flex-lg-column gap-lg-3">
+                    <h5 class="text-white "><span>News</span> letter</h5>
+                    <p class="text-white ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut officia
+                        veniam vitae deleniti non a corporis ab in Lorem ipsum dolor sit amet consectetur adipisicing.
+                    </p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control bg-primary border-light text-light"
+                            placeholder="Email Adress" aria-label="Username" aria-describedby="basic-addon1">
+                        <span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-paper-plane"
+                                style="color: #2e7bff;"></i> </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src=./node_modules/bootstrap/dist/js/bootstrap.bundle.js></script>
+</body>
+
+</html>

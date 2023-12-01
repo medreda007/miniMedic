@@ -1,0 +1,325 @@
+// btns hover
+@media screen and ( min-width: 500px )
+    .h-uderline
+        position: relative
+        &::before
+            content: ""
+            height: 3px
+            width: 0
+            background: blue
+            position: absolute
+            left: 0
+            bottom: -15px
+            transition: all 0.5s
+            pointer-events: none
+        &:hover
+            &::before
+                width: 100%
+    .h-btn
+        background-image: linear-gradient(#363636, #363636)
+        background-position: 50% 50%
+        background-repeat: no-repeat
+        background-size: 0% 100%
+        transition: background-size .5s, color .5s
+    .h-btn:hover
+        background-size: 100% 100%
+        color: #fff
+
+
+
+
+
+    // section 1
+.img1
+    height: 90vh
+    background-image: url(../img/slider.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+.img2
+    height: 90vh
+    background-image: url(../img/slider2.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+.img3
+    height: 90vh
+    background-image: url(../img/slider3.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+.paragraph1
+    width: 50% !important
+// section 2
+.sec2
+    display: flex
+    justify-content: center
+    text-align: center
+    align-items: center
+    flex-direction: column
+    h2
+        width: 50%
+    p
+        width: 50%
+.icons
+    display: flex
+    justify-content: space-around
+    padding: 5%
+    position: relative
+    &::after
+        position: absolute
+        content: ""
+        left: 27rem
+        top: 8rem
+        width: 12rem
+        border-bottom: 4px dotted $blue
+    &::before
+        position: absolute
+        content: ""
+        right: 27rem
+        top: 8rem
+        width: 12rem
+        border-bottom: 4px dotted $blue
+    .icon-border
+        display: flex
+        justify-content: center
+        align-items: center
+        border: solid 1px grey
+        border-radius: 50%
+        width: 100px
+        height: 100px
+        font-size: 3vw
+.icons-parts
+    display: flex
+    flex-direction: column
+    text-align: center
+    align-items: center
+    justify-content: center
+    padding: 1vw
+// section 3
+.bg-img2
+    background-image: url(../img/fun-bg.jpg)
+    // background-attachment: fixed
+    background-repeat: no-repeat
+    background-size: cover
+    .bg-blue
+        padding: 8%
+    .icon2-border
+        display: flex
+        justify-content: center
+        align-items: center
+        border: solid 2px white
+        border-radius: 50%
+        width: 100px
+        height: 100px
+        font-size: 3vw
+// section 4
+.sec4-title
+    width: 30%
+.sec4-para
+    width: 35%
+
+// section 5
+.sec5-bg-img
+    background-image: url(../img/call-bg.jpg)
+    background-size: cover
+    background-attachment: fixed
+    background-repeat: no-repeat
+    .bg-blue
+        padding: 6%
+    h2
+        width: 35%
+    p
+        width: 35%
+    // section 6
+.image1
+    width: 18rem
+    height: 14rem
+    position: relative
+    img
+        width: 100%
+        height: 100%
+        display: block
+    div
+        width: 100%
+        height: 100%
+        top: 0
+        left: 0
+        position: absolute
+        background-color: $blue
+        display: flex
+        justify-content: center
+        align-items: center
+        opacity: 0
+        transition: 1s
+        &:hover
+            opacity: 70%
+        button
+            width: 8rem
+            height: 3rem
+    // section 8
+.sec8-cards
+    padding: 3%
+    padding-top: 1%
+    .i1
+        font-size: 4vw !important
+    a
+        width: 150%
+.sec8-icon
+    font-size: 2px !important
+
+    // section 9
+.sec9-cards
+    width: 100%
+    padding-bottom: 8%
+    .col
+        width: 30%
+        .card
+            box-shadow: 2px 1px 2px lightgrey
+.card-ticket
+    width: 30%
+    
+
+    // section 10
+.bg-img3
+    background-image: url(../img/client-bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    .bg-blue
+        padding: 8%
+        .sec10-imgs
+            width: 10vw
+    // section 11 
+.sec11-textform
+    width: 100%
+    textarea
+        padding-bottom: 29%
+
+    // section 12
+.sec12-bg
+    padding: 7%
+.chi7aja
+    font-size: 10px !important
+@media (max-width: 430px)    
+    // nav bar 
+    .nav-btn
+        display: none
+        // section 1
+    .img1
+        height: 60vh
+        padding-top: 20%
+        padding-left: 5%
+        .paragraph1
+            width: 130% !important
+        .caro-btn
+            width: 120% !important
+    .img2
+        height: 60vh
+        padding-top: 20%
+        padding-left: 5%
+        .paragraph1
+            width: 130% !important
+        .caro-btn
+            width: 120% !important
+    .img3
+        height: 60vh
+        padding-top: 20%
+        padding-left: 5%
+        .paragraph1
+            width: 130% !important
+        .caro-btn
+            width: 120% !important
+    .carousel-control-prev-icon
+        display: none
+    .carousel-control-next-icon
+        display: none
+    .caro-btn
+        width: 100%
+    // section 2
+    .sec2
+        padding-top: 10%
+        h2
+            width: 90%
+        p
+            width: 90%
+    .icons
+        flex-direction: column
+        &::after
+            width: 0rem
+        &::before
+            width: 0rem
+        .icon-border
+            font-size: 10vw
+    // section 3
+    .icon2-border
+        i
+            font-size: 10vw
+    // section 4
+    .sec4-title
+        width: 85%
+    .sec4-para
+        width: 85%
+    // section 5
+    .sec5-bg-img
+        h2
+            width: 100%
+        p
+            width: 100%
+    // section 6
+    .div1
+        h1
+            width: 150%
+        p
+            width: 150%
+    .sec6-title
+        width: 85%
+    .sec6-para
+        width: 85%
+    // section 7
+    .sec7-row
+        width: 100% !important
+        i
+            font-size: 12vw
+    // section 8
+    .sec8-all-cards
+        padding-left: 10% !important
+    .sec8-cards
+        width: 80vw
+        .i1
+            font-size: 12vw !important
+        a
+            width: 90%
+        b
+            font-size: 10vw !important
+    // section 9
+    .sec9-cards
+        padding-left: 5%
+        .col
+            width: 100%
+            .card-ticket
+                width: 40%
+    // section 10
+    .sec10-imgs
+        width: 65% !important
+    // section 11
+    .sec11-inputs
+        width: 195% !important
+    .sec11-textform
+        width: 195%
+        button
+            width: 50%
+            padding: 1vh
+    .sec11-img img
+        width: 100vw
+    // section 12
+    .sec12-inputs
+        width: 100% !important
+    .email-input
+        width: 100% !important
+    .btn-sec12
+        width: 100% !important
+        padding: 1vh
+    // footer
+    .footer-para
+        width: 100% !important
+        p
+            width: 100% !important
+    .footer-timing
+        width: 100%
